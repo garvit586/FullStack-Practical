@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-13</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .tick{
+        height: 40px;
+    }
+    .wrong{
+        height: 40px;
+    }
+    body{
+        min-width: 100%;
+        background-color: lightgrey;
+    }
+    .wrapper{
+        width: 600px;
+        background-color: #ffff;
+        padding: 10px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .custom-table{
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+    .basic{
+        background-color: #c1dcb7;
+    }
+    .Plus{
+        background-color: #bbd1c6;
+    }
+    .Delux{
+        background-color: #afc9d3;
+    }
+    .Pro{
+        background-color: #81a9b8;
+    }
+
+    .custom-table td,.custom-table th{
+        width: 150px;
+        padding: 8px 5px;
+        text-align: center;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+    }
+
+    .custom-table th{
+        height: 70px;
+        color: #64548f;
+        font-size: 28px;
+    }
+    i{
+        font-size: 30px;
+        color: #64548f;
+        margin-right:10px ;
+    }
+    tbody tr:nth-child(odd),tfoot tr:nth-child(odd){
+        background-color: #edf3e2;
+
+    }
+    tfoot tr{
+        line-height: 70px;
+    }
+    button {
+    height: 35px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: purple;
+    color: white;
+  }
+</style>
+<body>
+    <div class="wrapper">
+        <h2>
+            SELECT YOUR PLAN
+        </h2>
+            <table class="custom-table">
+                <colgroup class="basic"></colgroup>
+                <colgroup class="Plus"></colgroup>
+                <colgroup class="Delux"></colgroup>
+                <colgroup class="Pro"></colgroup>
+                <thead>
+                    <tr>
+                        <th>
+                            <i class="fas fa-building"></i>Basic 
+                        </th>
+                        <th>
+                            <i class="fab fa-superpowers"></i>Plus
+                        </th>
+                        <th>
+                            <i class="fab fa-telegram-plane"></i>Delux
+                        </th>
+                        <th>
+                            <i class="fas fa-tachometer-alt"></i>Pro
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Rs. 500/-
+                        </td>
+                        <td>
+                            Rs. 1500/-
+                        </td>
+                        <td>
+                            Rs. 2500/-
+                        </td>
+                        <td>
+                            Rs. 3500/-
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            50 pages
+                        </td>
+                        <td>
+                            75 pages
+                        </td>
+                        <td>
+                            Unlimited
+                        </td>
+                        <td>
+                            Unlimited
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3 Users</td>
+                        <td>5 Users</td>
+                        <td>10 Users</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>10 Sites</td>
+                        <td>25 Sites</td>
+                        <td>100 Sites</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>50 MB</td>
+                        <td>250 MB</td>
+                        <td>1 GB</td>
+                        <td>5 GB</td>
+                    </tr>
+                    <tr>
+                        <td>included</td>
+                        <td>included</td>
+                        <td>included</td>
+                        <td>included</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="wrong" src="./images/close.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="wrong"src="./images/close.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="wrong"src="./images/close.png" alt="">
+                        </td>
+                        <td>
+                            <img class="wrong"src="./images/close.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="wrong"src="./images/close.png" alt="">
+                        </td>
+                        <td>
+                            <img class="wrong"src="./images/close.png" alt="">
+                        </td>
+                        <td>
+                            <img class="wrong" src="./images/close.png" alt="">
+                        </td>
+                        <td>
+                            <img class="tick" src="./images/Check-icon.png" alt="">
+                        </td>
+                    </tr>
+                    <tfoot>
+                    <tr>
+                        <td><button>Sign Up</button></td>
+                        <td><button>Sign Up</button></td>
+                        <td><button>Sign Up</button></td>
+                        <td><button>Sign Up</button></td>
+                    </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
